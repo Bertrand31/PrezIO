@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/bertrandjunqua/Code/PrezIO/src/main/scala/prezio/Main.scala:23:5: illegal start of statement (no modifiers allowed here)[0m
-[0m[[0m[31merror[0m] [0m[0m    private def ioPrint(str: String): IO[Unit] =[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
