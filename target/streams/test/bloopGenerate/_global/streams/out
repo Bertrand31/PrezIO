@@ -1,0 +1,4 @@
+[debug] [prezio-test] Classpath dependencies List()
+[debug] [prezio-test] Dependencies from configurations List(prezio)
+[debug] Bloop wrote the configuration of project 'prezio-test' to '/Users/bertrandjunqua/Code/PrezIO/.bloop/prezio-test.json'
+[success] Generated .bloop/prezio-test.json
