@@ -835,3 +835,50 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2020.07.02 17:27:23 INFO  time: compiled prezio in 0.66s
 2020.07.02 17:27:27 INFO  compiling prezio (1 scala source)
 2020.07.02 17:27:27 INFO  time: compiled prezio in 0.68s
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+2020.07.02 17:33:52 INFO  started: Metals version 0.9.0 in workspace '/Users/bertrandjunqua/Code/PrezIO'
+2020.07.02 17:33:53 INFO  time: initialize in 0.84s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/8g/qr1hxqxd5_3b0gnhj867khpm0000gr/T/bsp-launcher5251357640049505389/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.07.02 17:33:57 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/8g/qr1hxqxd5_3b0gnhj867khpm0000gr/T/bsp-launcher5251357640049505389/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/8g/qr1hxqxd5_3b0gnhj867khpm0000gr/T/bsp-launcher5251357640049505389/bsp.socket...
+2020.07.02 17:33:57 INFO  no build target: using presentation compiler with only scala-library
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.07.02 17:33:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/bertrandjunqua/Library/Caches/org.scalameta.metals/bsp.trace.json
+2020.07.02 17:33:57 INFO  time: connected to build server in 0.3s
+2020.07.02 17:33:57 INFO  Connected to Build server v1.4.0-RC1-229-b7c15aa9
+2020.07.02 17:33:59 INFO  time: indexed workspace in 2.09s
+2020.07.02 17:34:11 INFO  skipping build import with status 'Installed'
+2020.07.03 14:41:35 INFO  compiling prezio (1 scala source)
+2020.07.03 14:41:37 INFO  time: compiled prezio in 1.77s
+2020.07.03 14:43:39 INFO  compiling prezio (1 scala source)
+2020.07.03 14:43:39 INFO  time: compiled prezio in 0.82s
+2020.07.03 14:49:16 INFO  compiling prezio (1 scala source)
+2020.07.03 14:49:16 INFO  time: compiled prezio in 0.77s
+juil. 03, 2020 3:44:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 13
+juil. 03, 2020 3:45:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 17
+2020.07.03 15:45:15 INFO  compiling prezio (1 scala source)
+2020.07.03 15:45:17 INFO  time: compiled prezio in 1.65s
+juil. 03, 2020 3:48:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 23
+2020.07.03 15:49:19 INFO  compiling prezio (1 scala source)
+2020.07.03 15:49:19 INFO  time: compiled prezio in 0.82s
+2020.07.03 15:57:39 INFO  compiling prezio (1 scala source)
+2020.07.03 15:57:40 INFO  time: compiled prezio in 1.02s
+2020.07.03 15:58:16 INFO  compiling prezio (1 scala source)
+2020.07.03 15:58:16 INFO  time: compiled prezio in 0.79s
+2020.07.03 15:59:58 INFO  compiling prezio (1 scala source)
+2020.07.03 15:59:59 INFO  time: compiled prezio in 1.17s
+juil. 03, 2020 4:02:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+AVERTISSEMENT: Unmatched cancel notification for request id 35
+2020.07.03 16:11:37 INFO  compiling prezio (1 scala source)
+2020.07.03 16:11:37 INFO  time: compiled prezio in 0.71s
+2020.07.03 16:19:22 INFO  compiling prezio (1 scala source)
+2020.07.03 16:19:22 INFO  time: compiled prezio in 0.71s
