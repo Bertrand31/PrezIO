@@ -17,9 +17,9 @@ object Refactoring extends IOApp {
 
   private def retrieveAndEnrich(id: String): IO[String] =
     for {
-      record <- retrieveFromDB(id)
-      processed = record ++ "-bar"
-      enriched <- enrich(processed)
+      record    <- retrieveFromDB(id)
+      processed =  record ++ "-bar"
+      enriched  <- enrich(processed)
     } yield enriched
 
   val program = retrieveAndEnrich("test") >>= writeToConsole

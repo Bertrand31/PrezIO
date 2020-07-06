@@ -7,7 +7,7 @@ import scala.concurrent.duration.Duration
 object Main extends App {
 
   {
-    implicit val ec: scala.concurrent.ExecutionContext = scala.concurrent.ExecutionContext.global
+    implicit val ec = scala.concurrent.ExecutionContext.global
 
     def fPrint(str: String): Future[Unit] =
       Future.successful { println(str) }

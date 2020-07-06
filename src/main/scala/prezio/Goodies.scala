@@ -4,7 +4,6 @@ import scala.concurrent.ExecutionContext
 
 object Goodies extends App {
 
-
   implicit val contextShift = IO.contextShift(ExecutionContext.global)
 
   {
@@ -24,13 +23,29 @@ object Goodies extends App {
   }
 
   {
-    // Easy parallelism
+    // Applicatives instance
+    val effect1 = IO.pure("foo")
+    val effect2 = IO.pure("bar")
+    val effect3 = IO.pure("baz")
+
+    val program =
+      List(effect1, effect2, effect3)
+        .sequence
+        .map(_ mkString "_")
+
+    println(program.unsafeRunSync)
+  }
+
+  {
+    // Easy parallelism with Applicatives instance
     val effect1 = IO { println("foo") }
     val effect2 = IO { println("bar") }
     val effect3 = IO { println("baz") }
 
-    List(effect1, effect2, effect3)
-      .parSequence
-      .unsafeRunAsync({ _ => })
+    val program =
+      List(effect1, effect2, effect3)
+        .parSequence
+
+    program.unsafeRunSync
   }
 }
