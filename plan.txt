@@ -1,0 +1,36 @@
+== INTRODUCTION ==
+
+• functional programming:
+  -> programming with total, mathematical funcitons, mapping a set to another (isOdd)
+  -> as opposed to partial functions, which lie about their type signature (can throw errors, does not provide a result for every input)
+
+• mathematical definition of a function:
+   -> total
+   -> referentially transparent
+      _ an expression - a function call- can be replaced by its value
+      _ given infinite space, any function can be replaced by a hash table
+
+• 3 examples
+  -> println
+  -> Future println
+  -> IO println
+
+• why is a Future not referentially transparent?
+  -> eager
+• why IO is
+  -> lazy
+  -> merely describing an effect, not performing it
+  -> can swap an expression with its resulting value
+
+== CATS GOODIES ==
+
+• semigroup instance
+  -> chain effects and merge their results
+
+• applicatives instance
+  -> easily chain effects, or perform them in parallel
+
+== SAMPLE IO PROGRAM ==
+
+• keeping everything lazy, do not perform the effects
+• push an IO monad all the way to the edge of the program (the main function) where the effects will be implicitly performed

@@ -1,5 +1,5 @@
 import cats.implicits._
-import cats.effect._
+import cats.effect.IO
 import scala.concurrent.Future
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration

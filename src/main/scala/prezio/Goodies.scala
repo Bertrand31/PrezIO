@@ -38,14 +38,15 @@ object Goodies extends App {
 
   {
     // Easy parallelism with Applicatives instance
-    val effect1 = IO { println("foo") }
-    val effect2 = IO { println("bar") }
-    val effect3 = IO { println("baz") }
+    val effect1 = IO.pure("foo")
+    val effect2 = IO.pure("bar")
+    val effect3 = IO.pure("baz")
 
     val program =
       List(effect1, effect2, effect3)
         .parSequence
+        .map(_ mkString "_")
 
-    program.unsafeRunSync
+    println(program.unsafeRunSync)
   }
 }
